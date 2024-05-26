@@ -68,7 +68,7 @@ for (let cell of cells) {
     cell.innerHTML = currentPlayer;
 
     if (checkWin()) {
-      alert(`${currentPlayer} wygrał!`);
+      alert(`${currentPlayer} have won!`);
       if (currentPlayer === "O") {
         winCount1++; // jezeli 0 wygral iteruje po wygranej 0
       } else { //else iteruje po 2 graczy czyli X
@@ -77,7 +77,7 @@ for (let cell of cells) {
       updateWinCount(); // Aktualizuje liczniki wygranych graczy
       setTimeout(resetGame, 600); // Funkcja reset game po każdym sprawdzeniu
     } else if (checkDraw()) {
-      alert("Remis!");
+      alert("Tie!");
       setTimeout(resetGame, 600); 
     } else {
       currentPlayer = currentPlayer === "O" ? "X" : "O";
