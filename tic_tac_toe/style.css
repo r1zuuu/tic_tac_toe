@@ -1,0 +1,58 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d4e4e6;
+  display: flex;
+}
+
+.grid {
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 7px;
+  display: grid;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 2.25rem; 
+  border: 5px solid #ddd;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #6f85bf;
+}
+
+.cell:hover {
+  background: #c1c1c2;
+}
+
+
+#updatePlayerShowing {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(#b60a88, #c84e11);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wins{
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #6f85bf;
+  text-align: center;
+}
+#rank{
+  margin-top: 30px;
+}
